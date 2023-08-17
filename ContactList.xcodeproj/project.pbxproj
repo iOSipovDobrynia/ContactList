@@ -14,6 +14,8 @@
 		E3323D1A2A8E9548002E4817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3323D182A8E9548002E4817 /* LaunchScreen.storyboard */; };
 		E3323D222A8E96DB002E4817 /* PersonsNameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3323D212A8E96DB002E4817 /* PersonsNameTableViewController.swift */; };
 		E3323D242A8E96F1002E4817 /* PersonsInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3323D232A8E96F1002E4817 /* PersonsInformationTableViewController.swift */; };
+		E3323D262A8E989E002E4817 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3323D252A8E989E002E4817 /* DataStore.swift */; };
+		E3323D282A8E9B62002E4817 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3323D272A8E9B62002E4817 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E3323D1B2A8E9548002E4817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3323D212A8E96DB002E4817 /* PersonsNameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsNameTableViewController.swift; sourceTree = "<group>"; };
 		E3323D232A8E96F1002E4817 /* PersonsInformationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsInformationTableViewController.swift; sourceTree = "<group>"; };
+		E3323D252A8E989E002E4817 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		E3323D272A8E9B62002E4817 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				E3323D0F2A8E9547002E4817 /* SceneDelegate.swift */,
 				E3323D212A8E96DB002E4817 /* PersonsNameTableViewController.swift */,
 				E3323D232A8E96F1002E4817 /* PersonsInformationTableViewController.swift */,
+				E3323D252A8E989E002E4817 /* DataStore.swift */,
+				E3323D272A8E9B62002E4817 /* Person.swift */,
 				E3323D132A8E9547002E4817 /* Main.storyboard */,
 				E3323D162A8E9548002E4817 /* Assets.xcassets */,
 				E3323D182A8E9548002E4817 /* LaunchScreen.storyboard */,
@@ -141,9 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3323D282A8E9B62002E4817 /* Person.swift in Sources */,
 				E3323D222A8E96DB002E4817 /* PersonsNameTableViewController.swift in Sources */,
 				E3323D242A8E96F1002E4817 /* PersonsInformationTableViewController.swift in Sources */,
 				E3323D0E2A8E9547002E4817 /* AppDelegate.swift in Sources */,
+				E3323D262A8E989E002E4817 /* DataStore.swift in Sources */,
 				E3323D102A8E9547002E4817 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
