@@ -25,7 +25,7 @@ struct Person {
             
             persons.append(Person(
                 name: dataStore.names.remove(at: index),
-                lastname: dataStore.lastname.remove(at: index),
+                lastname: dataStore.lastnames.remove(at: index),
                 phone: dataStore.phones.remove(at: index),
                 email: dataStore.emails.remove(at: index)))
         }

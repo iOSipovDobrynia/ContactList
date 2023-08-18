@@ -17,6 +17,7 @@
 		E3323D262A8E989E002E4817 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3323D252A8E989E002E4817 /* DataStore.swift */; };
 		E3323D282A8E9B62002E4817 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3323D272A8E9B62002E4817 /* Person.swift */; };
 		E357CAAB2A8F46C90040BF20 /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E357CAAA2A8F46C90040BF20 /* PersonDetailsViewController.swift */; };
+		E37A484C2A8FA7FC0040921C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A484B2A8FA7FC0040921C /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E3323D252A8E989E002E4817 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		E3323D272A8E9B62002E4817 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		E357CAAA2A8F46C90040BF20 /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		E37A484B2A8FA7FC0040921C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E3323D212A8E96DB002E4817 /* PersonsNameTableViewController.swift */,
 				E357CAAA2A8F46C90040BF20 /* PersonDetailsViewController.swift */,
 				E3323D232A8E96F1002E4817 /* PersonsInformationTableViewController.swift */,
+				E37A484B2A8FA7FC0040921C /* TabBarViewController.swift */,
 				E3323D252A8E989E002E4817 /* DataStore.swift */,
 				E3323D272A8E9B62002E4817 /* Person.swift */,
 				E3323D132A8E9547002E4817 /* Main.storyboard */,
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E37A484C2A8FA7FC0040921C /* TabBarViewController.swift in Sources */,
 				E3323D282A8E9B62002E4817 /* Person.swift in Sources */,
 				E3323D222A8E96DB002E4817 /* PersonsNameTableViewController.swift in Sources */,
 				E3323D242A8E96F1002E4817 /* PersonsInformationTableViewController.swift in Sources */,

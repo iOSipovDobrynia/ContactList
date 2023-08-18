@@ -8,10 +8,11 @@
 import UIKit
 
 class PersonsInformationTableViewController: UITableViewController {
-    private let persons = Person.getRandomPersons()
-    
+    var persons: [Person]!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("PersonsInformationTableViewController viewDidLoad")
     }
 
     // MARK: - Table view data source

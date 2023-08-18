@@ -18,7 +18,7 @@ class DataStore {
         "Olga",
         "Sergey"
     ]
-    var lastname = [
+    var lastnames = [
         "Goggi",
         "Karkin",
         "Motyl",
