@@ -87,7 +87,7 @@
         <!--Persons Information-->
         <scene sceneID="s1y-zA-3Xz">
             <objects>
-                <tableViewController id="XCZ-ac-TNd" sceneMemberID="viewController">
+                <tableViewController id="XCZ-ac-TNd" customClass="PersonsInformationTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Beu-hI-E2S">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="2390.0763358778627" y="359.85915492957747"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="AWt-Iv-kux">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Sgb-Jz-qpZ" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Sgb-Jz-qpZ" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g6O-pp-Xbl">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

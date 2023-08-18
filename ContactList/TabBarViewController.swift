@@ -14,19 +14,18 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TabBarViewController viewDidLoad")
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarVC = segue.source as? UITabBarController else { return }
-        guard let viewControllers = tabBarVC.viewControllers else { return }
+        
+        guard let viewControllers = viewControllers else { return }
         
         viewControllers.forEach { viewController in
-            if let personNameVC = viewController as? PersonsNameTableViewController {
+            guard let navigationVC = viewController as? UINavigationController else {
+                return
+            }
+            if let personNameVC = navigationVC.topViewController as? PersonsNameTableViewController {
                 personNameVC.persons = persons
-            } else if let personInfoVC = viewController as? PersonsInformationTableViewController {
+            } else if let personInfoVC = navigationVC.topViewController as? PersonsInformationTableViewController {
                 personInfoVC.persons = persons
             }
         }
     }
-    
 }
