@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,6 +24,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="7Zd-19-cre" kind="show" id="t6m-5d-e2e"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,6 +39,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ah-tN-5XS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3295.419847328244" y="359.85915492957747"/>
+        </scene>
+        <!--Person Details View Controller-->
+        <scene sceneID="Fvu-a7-BuQ">
+            <objects>
+                <viewController id="7Zd-19-cre" customClass="PersonDetailsViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="INs-ur-b1I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="6YI-r8-Imk">
+                                <rect key="frame" x="16" y="175" width="361" height="73.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dAY-KU-Dak">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="25.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8GN-cY-Q9V">
+                                        <rect key="frame" x="0.0" y="48.333333333333343" width="361" height="25.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Vf-vH-yLH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6YI-r8-Imk" firstAttribute="leading" secondItem="2Vf-vH-yLH" secondAttribute="leading" constant="16" id="aHj-gw-QJt"/>
+                            <constraint firstItem="2Vf-vH-yLH" firstAttribute="trailing" secondItem="6YI-r8-Imk" secondAttribute="trailing" constant="16" id="iea-V6-swu"/>
+                            <constraint firstItem="6YI-r8-Imk" firstAttribute="top" secondItem="2Vf-vH-yLH" secondAttribute="top" constant="20" id="tkP-GT-yx1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WnE-BK-NXf"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="8GN-cY-Q9V" id="6Tk-mj-8zH"/>
+                        <outlet property="phoneLabel" destination="dAY-KU-Dak" id="aZ3-qA-f3C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bsS-to-CCg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4247" y="360"/>
         </scene>
         <!--Persons Information-->
         <scene sceneID="s1y-zA-3Xz">
@@ -65,11 +113,11 @@
             </objects>
             <point key="canvasLocation" x="3329" y="1041"/>
         </scene>
-        <!--Item-->
+        <!--Info-->
         <scene sceneID="LWR-u8-0gx">
             <objects>
                 <navigationController id="rtC-02-9sv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Mac-GS-sDF"/>
+                    <tabBarItem key="tabBarItem" title="Info" image="info" catalog="system" id="Mac-GS-sDF"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZTi-tk-6Fu">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -82,11 +130,11 @@
             </objects>
             <point key="canvasLocation" x="2390" y="1041"/>
         </scene>
-        <!--Item-->
+        <!--Contacts-->
         <scene sceneID="Akz-Ip-Pwe">
             <objects>
                 <navigationController id="51d-fF-vSK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="yfL-nN-bCT"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.fill" catalog="system" id="yfL-nN-bCT"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="O9X-TJ-3sw">
                         <rect key="frame" x="0.0" y="59" width="393" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -105,6 +153,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Sgb-Jz-qpZ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g6O-pp-Xbl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -119,6 +168,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

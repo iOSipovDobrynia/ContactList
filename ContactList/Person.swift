@@ -11,6 +11,10 @@ struct Person {
     let phone: String
     let email: String
     
+    var fullname: String {
+        name + " " + lastname
+    }
+    
     static func getRandomPersons() -> [Person] {
         let dataStore = DataStore()
         

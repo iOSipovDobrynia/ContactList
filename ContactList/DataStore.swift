@@ -54,6 +54,4 @@ class DataStore {
         "sekudditettoi-7121@yopmail.com",
         "xifraffumatru-5834@yopmail.com"
     ]
-    
-    
 }
