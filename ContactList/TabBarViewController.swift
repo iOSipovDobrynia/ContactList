@@ -14,7 +14,11 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("TabBarViewController viewDidLoad")
-        
+        setupPersonDataForViewControllers()
+    }
+    
+    // MARK: - Private func
+    private func setupPersonDataForViewControllers() {
         guard let viewControllers = viewControllers else { return }
         
         viewControllers.forEach { viewController in

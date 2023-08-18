@@ -8,6 +8,7 @@
 import UIKit
 
 class PersonsNameTableViewController: UITableViewController {
+    // MARK: - Public properties
     var persons: [Person]!
     
     override func viewDidLoad() {

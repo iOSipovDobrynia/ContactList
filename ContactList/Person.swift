@@ -14,6 +14,9 @@ struct Person {
     var fullname: String {
         name + " " + lastname
     }
+    var contactInformation: [String] {
+        [phone, email]
+    }
     
     static func getRandomPersons() -> [Person] {
         let dataStore = DataStore()
