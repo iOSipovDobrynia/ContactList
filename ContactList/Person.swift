@@ -23,14 +23,20 @@ struct Person {
         
         var persons: [Person] = []
         
-        for _ in dataStore.names {
-            let index = Int.random(in: 0 ..< dataStore.emails.count)
-            
-            persons.append(Person(
-                name: dataStore.names.remove(at: index),
-                lastname: dataStore.lastnames.remove(at: index),
-                phone: dataStore.phones.remove(at: index),
-                email: dataStore.emails.remove(at: index)))
+        let shuffledNames = dataStore.names.shuffled()
+        let shuffledLastnames = dataStore.lastnames.shuffled()
+        let shuffledPhones = dataStore.phones.shuffled()
+        let shuffledEmails = dataStore.emails.shuffled()
+        
+        for index in 0 ..< dataStore.names.count {
+            persons.append(
+                Person(
+                    name: shuffledNames[index],
+                    lastname: shuffledLastnames[index],
+                    phone: shuffledPhones[index],
+                    email: shuffledEmails[index]
+                )
+            )
         }
         return persons
     }
