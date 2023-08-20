@@ -11,11 +11,6 @@ class PersonsInformationTableViewController: UITableViewController {
     // MARK: - Public properties
     var persons: [Person]!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("PersonsInformationTableViewController viewDidLoad")
-    }
-
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count

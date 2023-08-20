@@ -10,11 +10,6 @@ import UIKit
 class PersonsNameTableViewController: UITableViewController {
     // MARK: - Public properties
     var persons: [Person]!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("PersonsNameTableViewController viewDidLoad")
-    }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
