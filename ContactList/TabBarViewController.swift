@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+final class TabBarViewController: UITabBarController {
     // MARK: - Private properties
     private let persons = Person.getRandomPersons()
 

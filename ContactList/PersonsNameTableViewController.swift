@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonsNameTableViewController: UITableViewController {
+final class PersonsNameTableViewController: UITableViewController {
     // MARK: - Public properties
     var persons: [Person]!
 

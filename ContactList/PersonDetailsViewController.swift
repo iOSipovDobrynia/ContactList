@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PersonDetailsViewController: UIViewController {
+final class PersonDetailsViewController: UIViewController {
     // MARK: - IB Outlets
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var emailLabel: UILabel!
