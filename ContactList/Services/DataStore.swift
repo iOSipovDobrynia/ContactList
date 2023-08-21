@@ -6,7 +6,7 @@
 //
 
 final class DataStore {
-    var names = [
+    let names = [
         "Dobrynia",
         "Ekaterina",
         "Konstantin",
@@ -18,7 +18,7 @@ final class DataStore {
         "Olga",
         "Sergey"
     ]
-    var lastnames = [
+    let lastnames = [
         "Goggi",
         "Karkin",
         "Motyl",
@@ -30,7 +30,7 @@ final class DataStore {
         "Pashko",
         "Osip"
     ]
-    var phones = [
+    let phones = [
         "70071369172",
         "74025633849",
         "763981411133",
@@ -42,7 +42,7 @@ final class DataStore {
         "7226166369",
         "77822815098"
     ]
-    var emails = [
+    let emails = [
         "geppippoittaji-7116@yopmail.com",
         "xaheixexexu-2533@yopmail.com",
         "kouleuhiheissau-7086@yopmail.com",
