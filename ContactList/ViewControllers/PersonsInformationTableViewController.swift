@@ -20,7 +20,7 @@ final class PersonsInformationTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return persons[section].fullname
+        persons[section].fullname
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -30,17 +30,20 @@ final class PersonsInformationTableViewController: UITableViewController {
         
         var content = cell.defaultContentConfiguration()
         
-        if indexPath.row == 0 {
+        switch indexPath.row {
+        case 0:
             content.text = person.phone
             content.image = UIImage(systemName: "phone")
-        } else if indexPath.row == 1 {
+        default:
             content.text = person.email
             content.image = UIImage(systemName: "envelope")
-
         }
         
         cell.contentConfiguration = content
         
         return cell
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

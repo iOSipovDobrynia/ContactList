@@ -19,7 +19,7 @@ struct Person {
     }
     
     static func getRandomPersons() -> [Person] {
-        let dataStore = DataStore()
+        let dataStore = DataStore.shared
         
         var persons: [Person] = []
         
@@ -28,7 +28,14 @@ struct Person {
         let shuffledPhones = dataStore.phones.shuffled()
         let shuffledEmails = dataStore.emails.shuffled()
         
-        for index in 0 ..< dataStore.names.count {
+        let iterationCount = min(
+            shuffledNames.count,
+            shuffledLastnames.count,
+            shuffledPhones.count,
+            shuffledEmails.count
+        )
+        
+        for index in 0 ..< iterationCount {
             persons.append(
                 Person(
                     name: shuffledNames[index],
