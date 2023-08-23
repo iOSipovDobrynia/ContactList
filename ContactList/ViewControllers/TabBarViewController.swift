@@ -28,6 +28,8 @@ final class TabBarViewController: UITabBarController {
                 personNameVC.persons = persons
             } else if let personInfoVC = navigationVC.topViewController as? PersonsInformationTableViewController {
                 personInfoVC.persons = persons
+            } else if let personWithCustonCellVC = navigationVC.topViewController as? PersonWithCustomCellTableViewController {
+                personWithCustonCellVC.persons = persons
             }
         }
     }

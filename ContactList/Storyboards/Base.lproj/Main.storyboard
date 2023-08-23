@@ -113,6 +113,87 @@
             </objects>
             <point key="canvasLocation" x="3329" y="1041"/>
         </scene>
+        <!--Custom Cell-->
+        <scene sceneID="q4z-Tn-Ca4">
+            <objects>
+                <tableViewController id="Wnn-pg-lAN" customClass="PersonWithCustomCellTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ur5-4c-mTK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customHeader" id="Xfl-dY-zha">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xfl-dY-zha" id="snK-Qj-aej">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="EKu-rM-BVA">
+                                            <rect key="frame" x="16" y="11.666666666666666" width="361" height="20.333333333333336"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJO-Rv-dlI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ht-cq-XVj">
+                                                    <rect key="frame" x="170.66666666666666" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VFo-3V-rG3">
+                                                    <rect key="frame" x="341.33333333333331" y="0.99999999999999822" width="19.666666666666686" height="19"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="EKu-rM-BVA" secondAttribute="trailing" constant="16" id="9Qd-Ly-Yf3"/>
+                                        <constraint firstItem="EKu-rM-BVA" firstAttribute="centerY" secondItem="snK-Qj-aej" secondAttribute="centerY" id="Ycg-Cf-CD0"/>
+                                        <constraint firstItem="EKu-rM-BVA" firstAttribute="leading" secondItem="snK-Qj-aej" secondAttribute="leading" constant="16" id="vXy-67-o4Z"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" id="QRc-Um-01r">
+                                <rect key="frame" x="0.0" y="93.666667938232422" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QRc-Um-01r" id="QHF-1q-5u1">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wnn-pg-lAN" id="9zx-sT-7x5"/>
+                            <outlet property="delegate" destination="Wnn-pg-lAN" id="IIM-kn-kUX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Custom Cell" id="htK-aN-g4a"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9u-yE-NyU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3302" y="1720"/>
+        </scene>
+        <!--Custom-->
+        <scene sceneID="ufD-70-Zff">
+            <objects>
+                <navigationController id="Xbl-og-Vyx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Custom" image="cellularbars" catalog="system" id="kCI-fD-Vu4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bKC-5c-jQD">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wnn-pg-lAN" kind="relationship" relationship="rootViewController" id="DO0-V7-0ZJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mDy-3s-B6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2390" y="1720"/>
+        </scene>
         <!--Info-->
         <scene sceneID="LWR-u8-0gx">
             <objects>
@@ -160,6 +241,7 @@
                     <connections>
                         <segue destination="51d-fF-vSK" kind="relationship" relationship="viewControllers" id="5xd-cE-ewF"/>
                         <segue destination="rtC-02-9sv" kind="relationship" relationship="viewControllers" id="mCe-ej-BW5"/>
+                        <segue destination="Xbl-og-Vyx" kind="relationship" relationship="viewControllers" id="XLK-Wh-2MF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgQ-Su-jsn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -168,8 +250,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cellularbars" catalog="system" width="128" height="79"/>
         <image name="info" catalog="system" width="93" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="phone.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
