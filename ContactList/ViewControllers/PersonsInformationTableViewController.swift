@@ -19,10 +19,6 @@ final class PersonsInformationTableViewController: UITableViewController {
         persons[section].contactInformation.count
     }
     
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        persons[section].fullname
-    }
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "info", for: indexPath)
         
@@ -43,7 +39,30 @@ final class PersonsInformationTableViewController: UITableViewController {
         
         return cell
     }
+}
+
+// MARK: - UITableViewDelegate
+extension PersonsInformationTableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let frame = CGRect(
+            x: 16,
+            y: 3,
+            width: tableView.frame.width,
+            height: 21
+        )
+        let fullnameLabel = UILabel(frame: frame)
+        let contentView = UIView()
+        contentView.addSubview(fullnameLabel)
+        fullnameLabel.text = persons[section].fullname
+        fullnameLabel.font = UIFont.boldSystemFont(ofSize: 17)
+        return contentView
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.backgroundColor = .secondarySystemFill
     }
 }
