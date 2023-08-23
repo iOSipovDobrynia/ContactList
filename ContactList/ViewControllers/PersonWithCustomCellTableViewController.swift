@@ -46,3 +46,27 @@ class PersonWithCustomCellTableViewController: UITableViewController {
         return cell
     }
 }
+
+// MARK: - UITableViewDelegate
+extension PersonWithCustomCellTableViewController {
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customHeader") as? HeaderTableViewCell
+        let person = persons[section]
+        
+        cell?.lastNameLabel.text = person.lastname
+        cell?.nameLabel.text = person.name
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.backgroundColor = .lightGray
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        40
+    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
