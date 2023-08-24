@@ -10,7 +10,14 @@ import UIKit
 final class PersonsInformationTableViewController: UITableViewController {
     // MARK: - Public properties
     var persons: [Person]!
-
+    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        let dummyViewHeight = CGFloat(40)
+//        self.tableView.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: self.tableView.bounds.size.width, height: dummyViewHeight))
+//        self.tableView.contentInset = UIEdgeInsets(top: -dummyViewHeight, left: 0, bottom: 0, right: 0)
+//    }
+    
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         persons.count
